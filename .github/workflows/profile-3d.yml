@@ -1,0 +1,26 @@
+name: Generate 3D Contribution Graph
+
+on:
+  
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate-3d:
+    runs-on: ubuntu-latest
+    name: Generate 3D Contribution Graph
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate 3D Graph
+        uses: yoshi389111/github-profile-3d-contrib@0.6.1
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Atualiza imagem 3D de contribuições" || echo "Nada para commitar"
+          git push
