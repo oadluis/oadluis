@@ -7,7 +7,7 @@ JavaScript | Node.js | Typescript | Java
 💬 For more information and contact, call me: andre.barbosa.1390@gmail.com | [LinkedIn - Andre Luis Barbosa](https://www.linkedin.com/in/andre-luis-barbosa)
 
 ### 📊 Minhas Contribuições
-![3D contribuições](profile-3d-contrib/profile-night-green.svg)
+![3D contribuições](./profile-3d-contrib/profile-night-green.svg)
 
 
 ---
